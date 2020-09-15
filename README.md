@@ -1,2 +1,2 @@
 # PlayBot
-A set of routines in C\С++ with OpenCV for assistance in computer games
+A set of routines in C\С++ with [OpenCV](https://opencv.org/) for assistance in computer games.
