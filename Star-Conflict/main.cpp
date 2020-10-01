@@ -6,17 +6,17 @@
 #include <opencv2/imgproc.hpp>
 
 
-#include "ScreenShot.h"
-#include "StaticDetector.h"
+#include "../common/ScreenShot.h"
+#include "../common/StaticDetector.h"
 
 using namespace cv;
 
 int main(int argc, char** argv)
 {
 
-    StaticDetector station("../StarConflict/img/station.png");
-    StaticDetector cursor("../StarConflict/img/cursor.png");
-    StaticDetector aim("../StarConflict/img/aim.png");
+    StaticDetector station("../Star-Conflict/img/station.png");
+    StaticDetector cursor("../Star-Conflict/img/cursor.png");
+    StaticDetector aim("../Star-Conflict/img/aim.png");
 
     ScreenShot screen(0,0,1366,768);
     Mat img, show, result;
