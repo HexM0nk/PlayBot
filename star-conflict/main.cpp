@@ -14,9 +14,9 @@ using namespace cv;
 int main(int argc, char** argv)
 {
 
-    StaticDetector station("../Star-Conflict/img/station.png");
-    StaticDetector cursor("../Star-Conflict/img/cursor.png");
-    StaticDetector aim("../Star-Conflict/img/aim.png");
+    StaticDetector station("../star-conflict/img/station.png");
+    StaticDetector cursor("../star-conflict/img/cursor.png");
+    StaticDetector aim("../star-conflict/img/aim.png");
 
     ScreenShot screen(0,0,1366,768);
     Mat img, show, result;
@@ -54,7 +54,7 @@ int main(int argc, char** argv)
             }
             auto stop = std::chrono::high_resolution_clock::now();
             auto duration = duration_cast<std::chrono::milliseconds>(stop - start);
-            std::cout << "Time taken: " << duration.count() << std::endl;
+            std::cout << "Time taken: " << duration.count() << "  " << screen.GetInterval().count() << std::endl;
         }
 
         return 0;
